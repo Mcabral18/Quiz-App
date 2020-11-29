@@ -35,12 +35,8 @@ export default {
   },
   // mounted() {
   //   fetch("https://opentdb.com/api.php?amount=10&category=27&type=multiple")
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((Data) => {
-  //       this.questions = Data.results;
-  //     });
+  //     .then((response) => response.json())
+  //     .then((data) => (this.questions = data.results));
   // },
   async mounted() {
     const response = await fetch(
